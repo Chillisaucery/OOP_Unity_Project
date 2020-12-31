@@ -26,6 +26,52 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.167698, y: 2.05}
   m_EdgeRadius: 0
+--- !u!114 &1011081632410437414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522671876557860703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161cbb52ff4330049a6e0c219cf6f3e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_JumpForce: 400
+  m_CrouchSpeed: 0.36
+  m_MovementSmoothing: 0.05
+  m_AirControl: 0
+  m_WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  m_GroundCheck: {fileID: 522671875292628209}
+  m_CeilingCheck: {fileID: 28113851445825071}
+  m_CrouchDisableCollider: {fileID: 5136345390013614415}
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCrouchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &5755366029919971924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 522671876557860703}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f62699940177841bf952e7c5bdcbaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1011081632410437414}
+  frontCheck: {fileID: 28113851445825071}
+  WhatIsVerge:
+    serializedVersion: 2
+    m_Bits: 23
+  moveSpeed: 5
 --- !u!1 &6774822015392255107
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,6 +109,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6300558098886401861, guid: a51f73f12763179428747441f7f6c980,
+        type: 3}
+      propertyPath: m_InstanceId
+      value: -642124
+      objectReference: {fileID: 0}
     - target: {fileID: 7689535380750143497, guid: a51f73f12763179428747441f7f6c980,
         type: 3}
       propertyPath: m_Color.r
@@ -174,6 +225,12 @@ GameObject:
 --- !u!4 &522671876557860672 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7689535380750143502, guid: a51f73f12763179428747441f7f6c980,
+    type: 3}
+  m_PrefabInstance: {fileID: 7923609643727224654}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &522671875292628209 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7689535381630352319, guid: a51f73f12763179428747441f7f6c980,
     type: 3}
   m_PrefabInstance: {fileID: 7923609643727224654}
   m_PrefabAsset: {fileID: 0}

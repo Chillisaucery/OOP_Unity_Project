@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9009177497794410808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: 2, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9009177498146257327}
@@ -44,6 +44,12 @@ GameObject:
   - component: {fileID: 9009177498146257317}
   - component: {fileID: 9009177498146257319}
   - component: {fileID: 9009177498146257326}
+  - component: {fileID: -5364803126968274438}
+  - component: {fileID: 1712093659124402127}
+  - component: {fileID: 7544516760317075982}
+  - component: {fileID: 4281464476155561606}
+  - component: {fileID: 4377140871437112480}
+  - component: {fileID: 4895863971173255577}
   m_Layer: 0
   m_Name: SaberBot
   m_TagString: Untagged
@@ -197,6 +203,132 @@ CapsuleCollider2D:
   m_Offset: {x: -0.06875658, y: 0.8759713}
   m_Size: {x: 0.9843254, y: 1.6417875}
   m_Direction: 0
+--- !u!114 &-5364803126968274438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009177498146257369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f62699940177841bf952e7c5bdcbaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1712093659124402127}
+  frontCheck: {fileID: 9009177497794410759}
+  WhatIsVerge:
+    serializedVersion: 2
+    m_Bits: 23
+  moveSpeed: 30
+--- !u!114 &1712093659124402127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009177498146257369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161cbb52ff4330049a6e0c219cf6f3e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_JumpForce: 400
+  m_CrouchSpeed: 0.36
+  m_MovementSmoothing: 0.05
+  m_AirControl: 1
+  m_WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 23
+  m_GroundCheck: {fileID: 9009177498322376510}
+  m_CeilingCheck: {fileID: 9009177498322376510}
+  m_CrouchDisableCollider: {fileID: 0}
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCrouchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7544516760317075982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009177498146257369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6eb93617b56e248bd068e1056e08ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isDamaged: 0
+  deathEffect: {fileID: 7375931621364326060, guid: f15d702658ea6db49ac03a9217f63f4b,
+    type: 3}
+--- !u!114 &4281464476155561606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009177498146257369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b4a87f04ba23e4e82f5b3d36560f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  force: 5
+--- !u!68 &4377140871437112480
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009177498146257369}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -0.75, y: 0.9}
+  - {x: 0.75, y: 0.9}
+--- !u!114 &4895863971173255577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009177498146257369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 0000000045f490e803e9186127095b98cb05ad9b9517c1abc17bb0ec5524ba40
+  m_ShapePath:
+  - {x: -0.47736144, y: 0.8288202, z: 0}
+  - {x: -0.60228634, y: 0.119960785, z: 0}
+  - {x: 0.04318118, y: 0.14073372, z: 0}
+  - {x: 0.06499243, y: 0.5333328, z: 0}
+  - {x: -0.06587386, y: 0.92593193, z: 0}
+  - {x: 0.07589817, y: 1.2203817, z: 0}
+  - {x: 0.27219772, y: 1.2858143, z: 0}
+  - {x: 0.23744011, y: 1.7018499, z: 0}
+  - {x: -0.01932931, y: 1.7999992, z: 0}
+  - {x: -0.37122893, y: 1.2858143, z: 0}
+  m_ShapePathHash: 1519839981
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 119298
 --- !u!1 &9009177498322376511
 GameObject:
   m_ObjectHideFlags: 0

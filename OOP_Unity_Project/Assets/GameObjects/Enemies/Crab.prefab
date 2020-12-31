@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 3421443750861807914}
   - component: {fileID: 3421443750861807918}
   - component: {fileID: 3649786089203770044}
+  - component: {fileID: -4552209616973191849}
+  - component: {fileID: -8512363706126791005}
+  - component: {fileID: -5098257947627982255}
   m_Layer: 0
   m_Name: Crab
   m_TagString: Untagged
@@ -29,8 +32,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3421443750861807913}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.712, y: 5.7027893, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.7679, y: 5.6429, z: 0}
+  m_LocalScale: {x: 1.046592, y: 1.0748798, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -116,7 +119,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 0.854463
+  m_Mass: 0.98721784
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
@@ -157,3 +160,60 @@ CircleCollider2D:
   m_Offset: {x: -0.0005406141, y: -0.08893633}
   serializedVersion: 2
   m_Radius: 0.7257832
+--- !u!114 &-4552209616973191849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3421443750861807913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6eb93617b56e248bd068e1056e08ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isDamaged: 0
+  deathEffect: {fileID: 7375931621364326060, guid: f15d702658ea6db49ac03a9217f63f4b,
+    type: 3}
+--- !u!114 &-8512363706126791005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3421443750861807913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b4a87f04ba23e4e82f5b3d36560f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  force: 10
+--- !u!114 &-5098257947627982255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3421443750861807913}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 0000000045f490e803e9186127095b98cb05ad9b9517c1abc17bb0ec5524ba40
+  m_ShapePath:
+  - {x: -0.36134374, y: -0.24888325, z: 0}
+  - {x: 0.2675717, y: -0.24760294, z: 0}
+  - {x: 0.3533566, y: 0.31022072, z: 0}
+  - {x: -0.022041798, y: 0.6322689, z: 0}
+  - {x: -0.48115203, y: 0.33674288, z: 0}
+  m_ShapePathHash: -1737484484
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 140236

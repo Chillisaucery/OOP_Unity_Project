@@ -13,6 +13,10 @@ GameObject:
   - component: {fileID: 7689535380750143496}
   - component: {fileID: 7689535380750143508}
   - component: {fileID: 7689535380750143511}
+  - component: {fileID: 7375034855856387937}
+  - component: {fileID: -6034377772773112940}
+  - component: {fileID: 1874259526959985603}
+  - component: {fileID: 6300558098886401861}
   m_Layer: 0
   m_Name: Flyer Bot
   m_TagString: Untagged
@@ -143,6 +147,90 @@ CapsuleCollider2D:
   m_Offset: {x: 0.16857529, y: 1.1081697}
   m_Size: {x: 1.0769424, y: 1.9778745}
   m_Direction: 0
+--- !u!114 &7375034855856387937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7689535380750143505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42ed5a34fa0cb5b49825928cdcc58f74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shooting: {fileID: -6034377772773112940}
+  cooldown: 0.5
+--- !u!114 &-6034377772773112940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7689535380750143505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a785b43446fe40545b95ab1a171cb603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  busterPoint: {fileID: 7689535381630352319}
+  bulletPrefab: {fileID: 5243003546754940149, guid: dd44f07f255c7e341b8fc5ed2e582f2a,
+    type: 3}
+  alterBullet: {fileID: 0}
+  shooter: {fileID: 7689535380750143505}
+  recoil: 2
+  offset: 0.5
+--- !u!114 &1874259526959985603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7689535380750143505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6eb93617b56e248bd068e1056e08ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isDamaged: 0
+  deathEffect: {fileID: 7375931621364326060, guid: f15d702658ea6db49ac03a9217f63f4b,
+    type: 3}
+--- !u!114 &6300558098886401861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7689535380750143505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 0000000045f490e803e9186127095b98cb05ad9b9517c1abc17bb0ec5524ba40
+  m_ShapePath:
+  - {x: -0.036648035, y: 0.94748974, z: 0}
+  - {x: -0.26736104, y: 0.18070126, z: 0}
+  - {x: -0.1547879, y: 0.021224022, z: 0}
+  - {x: 0.10788256, y: 0.021223068, z: 0}
+  - {x: 0.35560477, y: 0.215765, z: 0}
+  - {x: 0.6839428, y: 0.8961258, z: 0}
+  - {x: 0.45498252, y: 1.1094294, z: 0}
+  - {x: 0.57693666, y: 1.8130112, z: 0}
+  - {x: 0.408077, y: 2.0287762, z: 0}
+  - {x: 0.16035497, y: 2.040618, z: 0}
+  - {x: -0.032833695, y: 1.8036299, z: 0}
+  - {x: -0.19231236, y: 1.5784836, z: 0}
+  - {x: -0.21107447, y: 1.1844778, z: 0}
+  m_ShapePathHash: -1409292890
+  m_Mesh: {fileID: 0}
+  m_InstanceId: -607118
 --- !u!1 &7689535380974504777
 GameObject:
   m_ObjectHideFlags: 0

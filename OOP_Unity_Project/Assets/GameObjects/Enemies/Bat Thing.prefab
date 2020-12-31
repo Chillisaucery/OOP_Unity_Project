@@ -75,6 +75,11 @@ GameObject:
   - component: {fileID: 454214888866017540}
   - component: {fileID: 454214888866017542}
   - component: {fileID: -1203699295606365063}
+  - component: {fileID: 8082369926104147470}
+  - component: {fileID: -6476552971949216384}
+  - component: {fileID: 9168076339190930420}
+  - component: {fileID: 2817115241763636008}
+  - component: {fileID: 259569261085156083}
   m_Layer: 0
   m_Name: Bat Thing
   m_TagString: Untagged
@@ -242,3 +247,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6179a14703730348baf98368ad24c85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controller: {fileID: 8082369926104147470}
+  upperCheck: {fileID: 454214888273212770}
+  groundCheck: {fileID: 454214887107033107}
+  rb: {fileID: 454214888866017541}
+  WhatIsVerge:
+    serializedVersion: 2
+    m_Bits: 23
+  moveSpeed: 2
+  floatingSpeed: 2
+--- !u!114 &8082369926104147470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454214888866017560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161cbb52ff4330049a6e0c219cf6f3e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_JumpForce: 400
+  m_CrouchSpeed: 0.36
+  m_MovementSmoothing: 0.05
+  m_AirControl: 0
+  m_WhatIsGround:
+    serializedVersion: 2
+    m_Bits: 1
+  m_GroundCheck: {fileID: 454214887107033107}
+  m_CeilingCheck: {fileID: 454214888273212770}
+  m_CrouchDisableCollider: {fileID: 0}
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnCrouchEvent:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &-6476552971949216384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454214888866017560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a6eb93617b56e248bd068e1056e08ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  isDamaged: 0
+  deathEffect: {fileID: 7375931621364326060, guid: f15d702658ea6db49ac03a9217f63f4b,
+    type: 3}
+--- !u!114 &9168076339190930420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454214888866017560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59b4a87f04ba23e4e82f5b3d36560f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 10
+  force: 2
+--- !u!114 &2817115241763636008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454214888866017560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7db70e0ea77f5ac47a8f4565a9406397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShadowGroup: 0
+  m_HasRenderer: 1
+  m_UseRendererSilhouette: 1
+  m_CastsShadows: 1
+  m_SelfShadows: 0
+  m_ApplyToSortingLayers: 0000000045f490e803e9186127095b98cb05ad9b9517c1abc17bb0ec5524ba40
+  m_ShapePath:
+  - {x: -0.16317034, y: 0.94390297, z: 0}
+  - {x: -0.34923983, y: 0.64389324, z: 0}
+  - {x: -0.21552038, y: 0.34499073, z: 0}
+  - {x: 0.17890215, y: 0.33036518, z: 0}
+  - {x: 0.32835388, y: 0.7049999, z: 0}
+  - {x: 0.10426855, y: 0.95670795, z: 0}
+  m_ShapePathHash: -985830579
+  m_Mesh: {fileID: 0}
+  m_InstanceId: 112436
+--- !u!114 &259569261085156083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454214888866017560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073797afb82c5a1438f328866b10b3f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_LightType: 1
+  m_BlendStyleIndex: 0
+  m_FalloffIntensity: 0.845
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_LightVolumeOpacity: 0
+  m_ApplyToSortingLayers: 00000000
+  m_LightCookieSprite: {fileID: 0}
+  m_UseNormalMap: 0
+  m_LightOrder: 0
+  m_AlphaBlendOnOverlap: 0
+  m_ShadowIntensity: 0
+  m_ShadowVolumeIntensity: 0
+  m_PointLightInnerAngle: 360
+  m_PointLightOuterAngle: 360
+  m_PointLightInnerRadius: 0
+  m_PointLightOuterRadius: 1
+  m_PointLightDistance: 3
+  m_PointLightQuality: 1
+  m_ShapeLightParametricSides: 5
+  m_ShapeLightParametricAngleOffset: 0
+  m_ShapeLightParametricRadius: 1
+  m_ShapeLightFalloffSize: 1
+  m_ShapeLightFalloffOffset: {x: -0.8, y: 0}
+  m_ShapePath:
+  - {x: -0.7201376, y: 0.8519449, z: 0}
+  - {x: -0.72157145, y: 0.36294842, z: 0}
+  - {x: -0.06677914, y: 0.4563446, z: 0}
+  - {x: 0.025615215, y: 0.5562315, z: 0}
+  - {x: -0.07321215, y: 0.71229076, z: 0}

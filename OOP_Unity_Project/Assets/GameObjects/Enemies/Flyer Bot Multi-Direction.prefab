@@ -30,6 +30,24 @@ Transform:
   m_Father: {fileID: 6983885325786312201}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5165512223577090086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983885325786312214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f62699940177841bf952e7c5bdcbaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1874740588269360605}
+  frontCheck: {fileID: 2628910378405908756}
+  WhatIsVerge:
+    serializedVersion: 2
+    m_Bits: 23
+  moveSpeed: 10
 --- !u!1001 &4835499884814987203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132,11 +150,40 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flyer Bot Multi-Direction
       objectReference: {fileID: 0}
+    - target: {fileID: 6421938623785712158, guid: f24eac02afb857f4da4cde728bf4e4c6,
+        type: 3}
+      propertyPath: m_CeilingCheck
+      value: 
+      objectReference: {fileID: 6336416841802301635}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f24eac02afb857f4da4cde728bf4e4c6, type: 3}
+--- !u!1 &6983885325786312214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2589740437847179733, guid: f24eac02afb857f4da4cde728bf4e4c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4835499884814987203}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6983885325786312201 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2589740437847179722, guid: f24eac02afb857f4da4cde728bf4e4c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4835499884814987203}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1874740588269360605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6421938623785712158, guid: f24eac02afb857f4da4cde728bf4e4c6,
+    type: 3}
+  m_PrefabInstance: {fileID: 4835499884814987203}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6983885325786312214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 161cbb52ff4330049a6e0c219cf6f3e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &6336416841802301635 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1509932986747531008, guid: f24eac02afb857f4da4cde728bf4e4c6,
     type: 3}
   m_PrefabInstance: {fileID: 4835499884814987203}
   m_PrefabAsset: {fileID: 0}
