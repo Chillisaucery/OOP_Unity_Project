@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 9168076339190930420}
   - component: {fileID: 2817115241763636008}
   - component: {fileID: 259569261085156083}
+  - component: {fileID: -4950141484113642160}
   m_Layer: 0
   m_Name: Bat Thing
   m_TagString: Untagged
@@ -100,6 +101,7 @@ Transform:
   m_Children:
   - {fileID: 454214887107033107}
   - {fileID: 454214888273212770}
+  - {fileID: 7200044328374103400}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -384,3 +386,46 @@ MonoBehaviour:
   - {x: -0.06677914, y: 0.4563446, z: 0}
   - {x: 0.025615215, y: 0.5562315, z: 0}
   - {x: -0.07321215, y: 0.71229076, z: 0}
+--- !u!114 &-4950141484113642160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454214888866017560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1cdaa0df1de389468ef8810fa2fc0b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 100
+--- !u!1 &7100939246503395086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7200044328374103400}
+  m_Layer: 0
+  m_Name: FrontCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7200044328374103400
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7100939246503395086}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1, y: 0.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 454214888866017548}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4353531173004449771, guid: 8585a1c910038044bb55c5f8c3a69f7f,
+        type: 3}
+      propertyPath: force
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: -1331097470375719498, guid: 8585a1c910038044bb55c5f8c3a69f7f,
         type: 3}
       propertyPath: timeLimit

@@ -50,6 +50,7 @@ GameObject:
   - component: {fileID: 4281464476155561606}
   - component: {fileID: 4377140871437112480}
   - component: {fileID: 4895863971173255577}
+  - component: {fileID: 2204786916805783630}
   m_Layer: 0
   m_Name: SaberBot
   m_TagString: Untagged
@@ -329,6 +330,19 @@ MonoBehaviour:
   m_ShapePathHash: 1519839981
   m_Mesh: {fileID: 0}
   m_InstanceId: 119298
+--- !u!114 &2204786916805783630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9009177498146257369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1cdaa0df1de389468ef8810fa2fc0b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 75
 --- !u!1 &9009177498322376511
 GameObject:
   m_ObjectHideFlags: 0

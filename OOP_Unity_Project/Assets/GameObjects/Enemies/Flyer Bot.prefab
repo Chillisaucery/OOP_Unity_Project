@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -6034377772773112940}
   - component: {fileID: 1874259526959985603}
   - component: {fileID: 6300558098886401861}
+  - component: {fileID: -4892883172275720261}
   m_Layer: 0
   m_Name: Flyer Bot
   m_TagString: Untagged
@@ -231,6 +232,19 @@ MonoBehaviour:
   m_ShapePathHash: -1409292890
   m_Mesh: {fileID: 0}
   m_InstanceId: -607118
+--- !u!114 &-4892883172275720261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7689535380750143505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1cdaa0df1de389468ef8810fa2fc0b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 125
 --- !u!1 &7689535380974504777
 GameObject:
   m_ObjectHideFlags: 0
