@@ -38,7 +38,7 @@ public class Countdown : MonoBehaviour
 	        seconds = 59;
             minutes--;
 	    }
-        if (minutes <0)
+        if (minutes <0 || player == null)
         {
             Destroy(player);
             Destroy(textObject);
