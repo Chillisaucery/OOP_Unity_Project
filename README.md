@@ -14,24 +14,28 @@
 
 + Player has health = 200.
 + Spawn all the enemies. 
++ Set the timer to 1 minutes and 30 seconds.
++ Set the score to 0.
 
 
 ###### Game Rule:
 
 + Type: Platformer.
-+ Player can shoot enemies to damage and eventually destroy them.
+
++ The timer will start at 1 minutes and 30 seconds and counts down to 0. When the counter hits 0, the player will be destroyed regardless of his health.
++ The objective of the game is to get the highest score possible. Whenever an enemy is destroyed, score of the player will increase. The score will be base on the type of the enemies and the health the player has at that moment.
+
++ Player has health. He can be damaged by the enemies or sometimes even his own wave bullets. He can run, jump or dash to move.
++ Player can shoot enemies to damage and eventually destroy them.  
++ Player can shoot 2 kinds of bullet: normal bullets and a wave bullets. Normal bullet does less damage, but flies farther and faster. Wave bullets have higher damage and shorter range, it will damage the player if he moves carelessly, also the player cannot shoot waves bullets if they are moving horizontally.
+
 + Enemies can shoot or touch the player to damage and eventually destroy him.
-+ Player can jump or dash to dodge the monster’s attack.
-+ Player can shoot 2 kinds of bullet: a normal bullet and a wave bullet.
-+ Normal bullet usually does less damage, but flies farther and faster.
-+ Wave bullets have higher damage and shorter range, also the player cannot shoot waves bullets if they are moving horrizontally..
-+ The game will have no boss, so the win condition is to destroy all the monsters in the map to win and end the game.
-+ Enemy will has different kinds (like flying, grounded, can shoot or cannot shoot).
++ There are multiple types of enemy, each will have some distinctive properties.  
 
 
 ###### Game Over:
 + Health = 0.
-+ Amount of monster = 0.
++ Timer = 0.
 
 
 ### Terminogies:
@@ -62,8 +66,9 @@ This is our link for class diagram : https://app.diagrams.net/#G18GANFgK7SwhiZsI
 
 ### OOP properties:
 Unity has many features designed base of the concept of OOP. We took advantage of this to implement OOP into our games.
-1.	 Inheritance and Polymorphism: Unity support this through a use of "Prefab" system. We can save our Game Objects as .prefab files and then create some Variants of them. Variants are also .prefab files, but it inherit all the properties of the base file and allow us to modify its own properties. 
-2.	 Decorator Pattern: The Game Object system support this pattern. Each Game Object is created with only 1 initial components (which is Transform). We then 'decorate' these Game Object with different kinds of components to create all the Game Object in the game. 
-3.	 Factory Pattern: the "Prefab" system also support this pattern. We can create multiple Game Objects into the game from a base .prefab file. Our bullets and enemies are created this way/
+1.	 Inheritance and Polymorphism: Unity support this through a use of "Prefab" system. We can save our Game Objects as .prefab files and then create some Variants of them. Variants are also .prefab files, but it inherit all the properties of the base file and allow us to modify its own properties.
+2.   Encapsulation: In our C# code, we have decide the access modifiers of our functions and variables.
+3.	 Decorator Pattern: The Game Object system support this pattern. Each Game Object is created with only 1 initial components (which is Transform). We then 'decorate' these Game Object with different kinds of components to create all the Game Object in the game. 
+4.	 Factory Pattern: the "Prefab" system also support this pattern. We can create multiple Game Objects into the game from a base .prefab file. Our bullets and enemies are created this way.
 
     
